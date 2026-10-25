@@ -1,0 +1,10 @@
+apple_cursor
+claude-code
+goland
+goland-jre
+intellij-idea-ultimate-edition
+noctalia-legacy-v4
+vicinae
+yay
+yay-debug
+zen-browser-bin

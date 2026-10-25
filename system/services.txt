@@ -1,0 +1,11 @@
+accounts-daemon.service
+bluetooth.service
+docker.service
+getty@.service
+greetd.service
+NetworkManager-dispatcher.service
+NetworkManager-wait-online.service
+NetworkManager.service
+seatd.service
+systemd-userdbd.socket
+remote-fs.target

@@ -1,0 +1,117 @@
+# Zathura configuration - glassmorphism theme
+# Requires compositor blur (Hyprland / Picom)
+
+# Font
+set font "JetBrainsMono NF 11"
+
+# Window
+set window-title-basename true
+set window-title-page true
+set window-title-home-tilde true
+set statusbar-basename true
+set statusbar-home-tilde true
+set statusbar-page-percent true
+set selection-clipboard clipboard
+set adjust-open width
+set pages-per-row 1
+set guioptions ""
+
+# Scrolling
+set scroll-page-aware true
+set scroll-full-overlap 0.01
+set scroll-step 50
+set zoom-min 10
+set zoom-center true
+set vertical-center true
+
+# Background - fully transparent for blur effect
+set default-bg "rgba(0,0,0,0)"
+set default-fg "#cdd6f4"
+
+# Recolor for PDF content - transparent overlay
+set recolor true
+set recolor-lightcolor "rgba(0,0,0,0)"
+set recolor-darkcolor "#cdd6f4"
+set recolor-reverse-video true
+set recolor-keephue false
+
+# Status bar
+set statusbar-bg "rgba(30,30,46,0.6)"
+set statusbar-fg "#cdd6f4"
+
+# Input bar
+set inputbar-bg "rgba(49,50,68,0.7)"
+set inputbar-fg "#cdd6f4"
+
+# Notifications
+set notification-bg "rgba(137,180,250,0.7)"
+set notification-fg "#1e1e2e"
+set notification-error-bg "rgba(243,139,168,0.7)"
+set notification-error-fg "#1e1e2e"
+set notification-warning-bg "rgba(249,226,175,0.7)"
+set notification-warning-fg "#1e1e2e"
+
+# Completion
+set completion-bg "rgba(49,50,68,0.7)"
+set completion-fg "#cdd6f4"
+set completion-highlight-bg "rgba(137,180,250,0.7)"
+set completion-highlight-fg "#1e1e2e"
+set completion-group-bg "rgba(69,71,90,0.6)"
+set completion-group-fg "#cdd6f4"
+
+# Index/TOC
+set index-bg "rgba(30,30,46,0.7)"
+set index-fg "#cdd6f4"
+set index-active-bg "rgba(137,180,250,0.7)"
+set index-active-fg "#1e1e2e"
+
+# Highlights
+set highlight-color "rgba(249,226,175,0.5)"
+set highlight-active-color "rgba(137,180,250,0.6)"
+set highlight-fg "#1e1e2e"
+
+# Loading
+set render-loading true
+set render-loading-bg "rgba(30,30,46,0.5)"
+set render-loading-fg "#89b4fa"
+
+# Page rendering
+set page-padding 10
+set page-cache-size 32
+set incremental-search true
+set abort-clear-search true
+
+# Key bindings
+map <C-i> zoom in
+map <C-o> zoom out
+map <C-r> rotate
+map <C-g> recolor
+map <F5> reload
+map <F2> toggle_statusbar
+map <F3> toggle_inputbar
+map <F11> toggle_fullscreen
+map <C-0> set zoom 100
+
+# Database & Synctex
+set database sqlite
+set synctex true
+set synctex-editor-command "code --goto %{input}:%{line}"
+
+# Print
+set print-command "lp"
+
+# Sandbox
+set sandbox normal
+
+# Links
+set link-zoom true
+set link-hadjust true
+
+# Startup
+set first-page-column 1:1
+set window-height 900
+set window-width 1200
+
+# Compositor rules for blur (Hyprland):
+# windowrule = opacity 0.9 0.9,^(org.pwmt.zathura)$
+# windowrule = blur,^(org.pwmt.zathura)$
