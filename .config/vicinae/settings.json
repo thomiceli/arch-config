@@ -23,5 +23,12 @@
    },
    "launcher_window": {
       "floating_status_bar": true
+   },
+   "providers": {
+      "clipboard": {
+         "preferences": {
+            "monitoring": true
+         }
+      }
    }
 }

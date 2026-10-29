@@ -361,7 +361,7 @@
             "kitty"
         ],
         "pinnedStatic": false,
-        "position": "top",
+        "position": "left",
         "showDockIndicator": false,
         "showLauncherIcon": false,
         "sitOnFrame": false,
@@ -485,12 +485,12 @@
         "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
-        "autoSchedule": true,
+        "autoSchedule": false,
         "dayTemp": "4793",
         "enabled": true,
         "forced": false,
-        "manualSunrise": "06:30",
-        "manualSunset": "18:30",
+        "manualSunrise": "09:30",
+        "manualSunset": "16:00",
         "nightTemp": "4293"
     },
     "noctaliaPerformance": {
